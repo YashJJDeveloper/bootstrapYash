@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,8 +26,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        padding: 10em;
-        filter: opacity(150%);
+       
       }
       h1 {
         font-size: 10em;
@@ -36,21 +36,31 @@
         color: rgb(229, 255, 0);
         margin-top: 10vh;
       }
+      a{
+        color: black;
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
     <div class="container">
+      <div class="row">
+        <div class="col-10"></div>
+        <div class="col-2">
+          <button type="button" class="btn btn-primary"><a href="#signup-form">Select  Plan</a></button>
+        </div>
+      </div>
       <!-- batch-cards -->
       <div class="row">
         <div class="text-center text-lg-start">
           <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">
-            Can I Swim?
+           Improvise Your Efforts
           </h1>
           <p
             class="fs-4"
             style="color: rgb(255, 0, 0); font-size: 3vw; font-weight: 3em"
           >
-            Yes Of course, It is a necessary and life-saving skill.
+            In this Scheme you expertise Swimming Skills
           </p>
         </div>
       </div>
@@ -73,6 +83,16 @@
             <p class="card-text">
               From Day 1 you get familier with water and its behaviour
             </p>
+            <p class="d-inline-flex gap-1">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Lessons
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body" style="color: black; background-color: rgba(0, 255, 255, 0.159);">
+                <a href="https://youtu.be/9x7FyIJdVsI?si=VSMU-ZcIdMDVq3jZ" style="color: black; text-decoration: none;">Tutorials For Basic</a>
+              </div>
+            </div>
           </div>
         </div>
         <div
@@ -92,6 +112,16 @@
               Make your movements clean and smooth with
               <strong>Flexibility</strong>
             </p>
+            <p class="d-inline-flex gap-1">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Lessons
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body" style="color: black; background-color: rgba(0, 255, 255, 0.159);">
+                <a href="https://youtu.be/D0b7GrQfEIE?si=P6QfbEwIsbwaKfX6" style="color: black; text-decoration: none;">Tutorials For Flexibility and Smoothness</a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="card text-bg-success mb-3" style="max-width: 18rem;
@@ -106,6 +136,16 @@
             <p class="card-text">
              Become tougher and increase your speed
             </p>
+            <p class="d-inline-flex gap-1">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Lessons
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body" style="color: black; background-color: rgba(0, 255, 255, 0.159);">
+                <a href="https://youtu.be/8c_lt66Yvn4?si=TQ0Khh2FvS8GCN_z" style="color: black; text-decoration: none;">Tutorials For Speed</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -116,21 +156,31 @@
       <div
         class="row align-items-center g-lg-5 py-5"
         style="filter: opacity(75%)"
+        id="signup-form"
       >
         <div class="col-lg-7 text-center text-lg-start">
           <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3"></h1>
-          <p class="col-lg-10 fs-4" style="color: red;">Register here for Pro Batch here &emsp; &#8827;</p>
+          <p class="col-lg-10 fs-1" style="color: red;">Register here for Pro Batch here  &#8827;</p>
         </div>
         <div class="col-md-10 mx-auto col-lg-5">
           <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
             <div class="form-floating mb-3">
               <input
-                type="email"
+                type="text"
                 class="form-control"
                 id="floatingInput"
-                placeholder="name@example.com"
+                placeholder="Full Name"
               />
-              <label for="floatingInput">Email address</label>
+              <label for="floatingInput">Full Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInput"
+                placeholder="Pool-Id"
+              />
+              <label for="floatingInput">Pool-Id</label>
             </div>
             <div class="form-floating mb-3">
               <input
@@ -146,9 +196,10 @@
                 <input type="checkbox" value="remember-me" /> Remember me
               </label>
             </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">
+            <button class="w-100 btn btn-lg btn-primary"  onclick="successPage()">
               Sign up
             </button>
+            <p id="display" style="color: black;"></p>
             <hr class="my-4" />
             <small class="text-body-secondary"
               >By clicking Sign up, you agree to the terms of use.</small
@@ -158,4 +209,11 @@
       </div>
     </div>
   </body>
+  <script>
+     function successPage(){
+      alert("Payment Successful");
+      document.getElementById("display").innerHTML = "'CONGRATULATIONS!'"  +" You are Now Successfully Registered for Freestyle Swimming";
+      
+    } 
+  </script>
 </html>

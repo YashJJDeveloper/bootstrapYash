@@ -25,7 +25,7 @@
       position: relative;
       overflow: scroll;
       margin-top: 2vh;
-  padding: 0;
+ 
   scroll-behavior: smooth;
     }
     /* .top-section{ 
@@ -89,7 +89,7 @@
     </video>
   </div> -->
     <div class="container">
-      <header>
+      <header id="top-section">
         <div class="row top-section">
           <div class="col-2">
             <img
@@ -119,95 +119,107 @@
       </header>
       <!-- end of header -->
       <br />
-      <!-- side-bar -->
+     
 
-      <button
-        class="btn btn-primary"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasWithBothOptions"
-        aria-controls="offcanvasWithBothOptions"
-        onclick="sideBar()"
-      >
-        Dive in to the Menu
-      </button>
-
-      <div
-        class="offcanvas offcanvas-start"
-        data-bs-scroll="true"
-        tabindex="-1"
-        id="offcanvasWithBothOptions"
-        aria-labelledby="offcanvasWithBothOptionsLabel"
-      >
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-            Chhatrapati Shivaji Maharaj <br />Jaltaran Talaav <br />
-            Katol
-          </h5>
+      <div class="row">
+         <!-- side-bar -->
+        <div class="col-4">
           <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          <p>
-            Try scrolling the rest of the page to see this option in action.
-          </p>
-          <div class="side-btns" id="side-bar">
-            <button type="button" class="btn btn-success" onclick="formPage()">Book a Session/Batch</button
-              >
-              
-             
-              <br /><br />
-              <button type="button" class="btn btn-success">Our Achievements</button
-              ><br /><br />
-              <button type="button" class="btn btn-success">Video Tutorials</button>
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions"
+          onclick="sideBar()"
+        >
+          Dive in to the Menu
+        </button>
+  
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-scroll="true"
+          tabindex="-1"
+          id="offcanvasWithBothOptions"
+          aria-labelledby="offcanvasWithBothOptionsLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+              Chhatrapati Shivaji Maharaj <br />Jaltaran Talaav <br />
+              Katol
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
           </div>
-          <div class="" id="form-page">
-            
-            <form action="">
-              <label for="">Enter Name :</label>&emsp;<input type="text" placeholder="Full Name"><br> <br>
-              <label for="">Contact No. :</label>&emsp;<input type="text" placeholder="Contact Number"> <br> <br>
-              <label for="">Your Age :</label>&emsp;&emsp; <input type="number" placeholder="Age"> <br><br>
-              <label for="">Preffered Time :</label>&emsp;<input type="time"> <br><br>
-              <label for="">Select Batch :</label>
-             <select name="" id="">
-              <optgroup label="Monthly Plan" > 
+          <div class="offcanvas-body">
+            <p>
+              Try scrolling the rest of the page to see this option in action.
+            </p>
+            <div class="side-btns" id="side-bar">
+              <button type="button" class="btn btn-success" onclick="formPage()">Book a Session/Batch</button
+                >
                 
-                <option value="">Kids-Batch (With Trainer)</option>
-                <option value="">Family Pass (Max-5)</option>
-                <option value="">Ladies-Special(Morning-Batch)</option>
-                <option value="">General Batch</option>
-              </optgroup>
+               
+                <br /><br />
+                <button type="button" class="btn btn-success">Our Achievements</button
+                ><br /><br />
+                <button type="button" class="btn btn-success">Video Tutorials</button>
+            </div>
+            <div class="" id="form-page">
               
-             </select>
-             <br>OR <br>
-             <label for="">Select Plan :</label>
-             <select name="" id="">
-              <optgroup label="Quarterly Plan">
-                <option value="">Basic</option>
-                <option value="">Proefficient Batch</option>
-                <option value="">Artistic(With Trainer)</option>
-              </optgroup>
-             </select>
-             
-            </form>
-            <br>
-            <button type="button" class="btn btn-success" onclick="sideBar()">Bact to Menu</button>
-            <button type="button" class="btn btn-success" onclick="feesPage()">Fees-Payment</button>
+              <form action="">
+                <label for="">Enter Name :</label>&emsp;<input type="text" placeholder="Full Name"><br> <br>
+                <label for="">Contact No. :</label>&emsp;<input type="text" placeholder="Contact Number"> <br> <br>
+                <label for="">Your Age :</label>&emsp;&emsp; <input type="number" placeholder="Age"> <br><br>
+                <label for="">Preffered Time :</label>&emsp;<input type="time"> <br><br>
+                <label for="">Select Batch :</label>
+               <select name="" id="">
+                <optgroup label="Monthly Plan" > 
+                  
+                  <option value="">Kids-Batch (With Trainer)</option>
+                  <option value="">Family Pass (Max-5)</option>
+                  <option value="">Ladies-Special(Morning-Batch)</option>
+                  <option value="">General Batch</option>
+                </optgroup>
+                
+               </select>
+               <br>OR <br>
+               <label for="">Select Plan :</label>
+               <select name="" id="">
+                <optgroup label="Quarterly Plan">
+                  <option value="">Basic</option>
+                  <option value="">Proefficient Batch</option>
+                  <option value="">Artistic(With Trainer)</option>
+                </optgroup>
+               </select>
+               
+              </form>
+              <br>
+              <button type="button" class="btn btn-success" onclick="sideBar()">Bact to Menu</button>
+              <button type="button" class="btn btn-success" onclick="feesPage()">Fees-Payment</button>
+            </div>
+            <div class="fees-pay" id="fee-payment">
+              <input type="checkbox"> I Agree your <a href="">terms and conditions <sup>*</sup></a>
+              <input type="number" placeholder="Enter Amount" min="100">
+              <button type="button" class="btn btn-success" onclick="successPage()">Pay Now</button>
+              <p id="display"></p>
+              <button type="button" class="btn btn-success" onclick="sideBar()">Bact to Menu</button>
+            </div>
           </div>
-          <div class="fees-pay" id="fee-payment">
-            <input type="checkbox"> I Agree your <a href="">terms and conditions <sup>*</sup></a>
-            <input type="number" placeholder="Enter Amount" min="100">
-            <button type="button" class="btn btn-success" onclick="successPage()">Pay Now</button>
-            <p id="display"></p>
-            <button type="button" class="btn btn-success" onclick="sideBar()">Bact to Menu</button>
-          </div>
+  
+          
         </div>
-
-        
+        </div>
+        <!-- end of side-bar -->
+        <div class="col-8">
+          <button type="button" class="btn btn-secondary"><a href="#plan-section">Our Plans</a></button>
+          <button type="button" class="btn btn-secondary"><a href="#batch-section">Special Batches</a></button>
+          <button type="button" class="btn btn-secondary"><a href="#event-section">Events</a></button>
+          <button type="button" class="btn btn-secondary"><a href="#contact-part">Contact Us</a></button>
+        </div>
       </div>
       <br />
       <br />
@@ -216,7 +228,7 @@
 
 </div>
 
-      <!-- end of side-bar -->
+      
       <!-- slider -->
 
       <div class="row">
@@ -317,7 +329,7 @@
 
       <!-- row-1 -->
       <div class="container px-4 py-5" id="custom-cards">
-        <h2 class="pb-2 border-bottom">Our Plans</h2>
+        <h2 class="pb-2 border-bottom" id="plan-section">Our Plans</h2>
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
           <div class="col">
             <a href="./basic-swimming.html">
@@ -453,7 +465,7 @@
       <!-- end of row-1 -->
       <!-- row-2 -->
       <div class="container px-4 py-5" id="custom-cards">
-        <h2 class="pb-2 border-bottom">Special Batches</h2>
+        <h2 class="pb-2 border-bottom" id="batch-section">Special Batches</h2>
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
           <div class="col">
             <a href="./cake-shop.html">
@@ -587,7 +599,142 @@
         </div>
       </div>
       <!-- end of row-2 -->
+<!-- row 3 -->
+<div class="container px-4 py-5" id="custom-cards">
+  <h2 class="pb-2 border-bottom" id="event-section">We Organise</h2>
+  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+    <div class="col">
+      <a href="./competition.html">
+      <div
+        class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+        style="
+          background-image: url('./poolasset/images/swim-competition.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
+      >
+        <div
+          class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+        >
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+            Swimming Competitions
+          </h3>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img
+                src="./poolasset/images/swim-logo.jpg"
+                alt="Bootstrap"
+                width="32"
+                height="32"
+                class="rounded-circle border border-white"
+              />
+            </li>
+            <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em">
+                <use xlink:href="#geo-fill"></use>
+              </svg>
+              <small></small>
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em">
+                <use xlink:href="#calendar3"></use>
+              </svg>
+              <small></small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </a>
+    </div>
 
+    <div class="col">
+      <a href="./tutors.html"
+        ><div
+          class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+          style="
+            background-image: url('./poolasset/images/tutors.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            "
+        >
+          <div
+            class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+          >
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+              Experts Live Sessions
+            </h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img
+                  src="./poolasset/images/swim-logo.jpg"
+                  alt="Bootstrap"
+                  width="32"
+                  height="32"
+                  class="rounded-circle border border-white"
+                />
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em">
+                  <use xlink:href="#geo-fill"></use>
+                </svg>
+                <small></small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em">
+                  <use xlink:href="#calendar3"></use>
+                </svg>
+                <small></small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col">
+      <a href="./events.html">
+        <div
+          class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+          style="
+            background-image: url('./poolasset/images/events.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+          "
+        >
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+              Events
+            </h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img
+                  src="./poolasset/images/swim-logo.jpg"
+                  alt="Bootstrap"
+                  width="32"
+                  height="32"
+                  class="rounded-circle border border-white"
+                />
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em">
+                  <use xlink:href="#geo-fill"></use>
+                </svg>
+                <small></small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em">
+                  <use xlink:href="#calendar3"></use>
+                </svg>
+                <small></small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+ <!-- end of row 3 -->
       <!-- end of batch-cards -->
 
       <!-- footer -->
@@ -635,6 +782,7 @@
                 <use xlink:href="#facebook"></use></svg></a>
           </li>
         </ul>
+        <button type="button" class="btn btn-secondary"><a href="#top-section">Back to Top</a></button>
       </footer>
     </div>
   </body>
@@ -656,8 +804,8 @@
       document.getElementById("fee-payment").hidden= false;
     }
     function successPage(){
-      alert = "Payment Successful"
-      document.getElementById("display").innerHTML = "'CONGRATULATIONS!'"  +" You are Now Successfully Registered"
+      alert("Payment Successful");
+      document.getElementById("display").innerHTML = "'CONGRATULATIONS!'"  +" You are Now Successfully Registered";
     }
   </script>
 </html>

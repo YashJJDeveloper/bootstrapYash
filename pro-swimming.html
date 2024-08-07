@@ -22,11 +22,31 @@
     ></script>
     <style>
       body {
-        background-image: url(./poolasset/images/level-two.jpg);
+        background-image: url(https://4kwallpapers.com/images/wallpapers/swimming-pool-spa-hotel-blue-water-reflections-peaceful-2560x1080-2595.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        /* background-color: bisque; */
        
+      }
+      .title-a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder ;
+        font-size: 0.35vw;
+        background-image: url(https://i3.wp.com/w0.peakpx.com/wallpaper/543/5/HD-wallpaper-shivaji-maharaj-shivaji-raje-god-shivaji-raje.jpg?resize=480%2C270&ssl=1);
+        -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       filter: drop-shadow(2px 2px 2px rgb(225, 203, 0));
+      }
+      .title-b {
+        font-weight: bolder;
+        background-image: url(https://img.freepik.com/premium-photo/realistic-4k-swimming-pool-white-background_1018896-4410.jpg);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(2px 2px 2px rgb(255, 128, 0));
       }
       h1 {
         font-size: 10em;
@@ -40,36 +60,87 @@
         color: black;
         text-decoration: none;
       }
+      a:hover{
+        color: yellow;
+      }
+      .button-top{
+        display: none;
+        position: fixed;
+        z-index: 99;
+        cursor: pointer;
+        bottom: 20px;
+  right: 6vw;
+  background-color: teal;
+      }
+      .button-top:hover{
+        background-color: cadetblue;
+      }
+      .home-link{ 
+        text-decoration: none;
+        color: rgb(6, 6, 6);
+      } 
+      .home-link:hover{
+        text-decoration: none;
+        color: black;
+      }
+      .card-text{
+        color: rgb(247, 244, 244);
+        font-size: large;
+      }
+      .cards-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      @media (min-width:700px) and (max-width:770px){
+        .title-a{
+          font-size: 0.3vw;
+        }
+      }
+      @media (min-width:950px) and (max-width:990px){
+        .title-a{
+          font-size: 0.3vw;
+        }
+      }
     </style>
   </head>
-  <body>
+  <body data-bs-theme="dark">
     <div class="container">
+      <button  id="myBtn" class="btn btn-secondary button-top">
+        <a href="./swimmingpool.html" class="home-link"> Back to Home</a>
+      </button>
       <div class="row">
-        <div class="col-10"></div>
-        <div class="col-2">
-          <button type="button" class="btn btn-primary"><a href="#signup-form">Select  Plan</a></button>
+        <div class="col-8 col-lg-10 col-md-9 col-sm-8"></div>
+        <div class="col-4 col-lg-2 col-md-3 col-sm-4">
+          <button type="button" class="btn btn-primary" style="margin-top: 2vh;"><a href="#signup-form">Select  Plan</a></button>
         </div>
       </div>
       <!-- batch-cards -->
-      <div class="row">
+      <div class="row" style="margin: 10;">
+        <div class="col-1"></div>
+        <div class="col-11 col-lg-10 title-a" >
+          <h1>Chhatrapati Shivaji Maharaj Jaltaran Talaaw</h1>
+
+          <h2 style="font-size: 3.2vw;">Nagar Parishad Katol</h2>
+        </div>
         <div class="text-center text-lg-start">
-          <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3 title-b">
            Improvise Your Efforts
           </h1>
           <p
             class="fs-4"
-            style="color: rgb(255, 0, 0); font-size: 3vw; font-weight: 3em"
+            style="color: rgb(30, 32, 15); font-size: 3vw; font-weight: 3em"
           >
-            In this Scheme you expertise Swimming Skills
+            In this Plan you expertise Swimming Skills
           </p>
         </div>
       </div>
-      <div class="row" style="gap: 1em">
+      <div class="row cards-row" style="gap: 1em">
         <div
           class="card text-bg-primary mb-3"
           style="
             max-width: 18rem;
-            background-image: url(./poolasset/images/underwater.jpg);
+            background-image: url(https://media.istockphoto.com/id/638028192/photo/pro-male-swimmer-in-action-inside-swimming-pool.jpg?s=612x612&w=0&k=20&c=tb7Afl4QkpE-ItvUDGaETXhI5pB4Dm21QjXdgWLxqJ4=);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -90,7 +161,7 @@
             </p>
             <div class="collapse" id="collapseExample">
               <div class="card card-body" style="color: black; background-color: rgba(0, 255, 255, 0.159);">
-                <a href="https://youtu.be/9x7FyIJdVsI?si=VSMU-ZcIdMDVq3jZ" style="color: black; text-decoration: none;">Tutorials For Basic</a>
+                <a href="https://youtu.be/9x7FyIJdVsI?si=VSMU-ZcIdMDVq3jZ" >Tutorials For Basic</a>
               </div>
             </div>
           </div>
@@ -99,7 +170,7 @@
           class="card text-bg-secondary mb-3"
           style="
           max-width: 18rem;
-          background-image: url(./poolasset/images/pro-swimmer.jpg);
+          background-image: url(https://d39l2hkdp2esp1.cloudfront.net/img/photo/124392/124392_00_2x.jpg?20170607214416);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -119,13 +190,13 @@
             </p>
             <div class="collapse" id="collapseExample">
               <div class="card card-body" style="color: black; background-color: rgba(0, 255, 255, 0.159);">
-                <a href="https://youtu.be/D0b7GrQfEIE?si=P6QfbEwIsbwaKfX6" style="color: black; text-decoration: none;">Tutorials For Flexibility and Smoothness</a>
+                <a href="https://youtu.be/D0b7GrQfEIE?si=P6QfbEwIsbwaKfX6" >Tutorials For Flexibility and Smoothness</a>
               </div>
             </div>
           </div>
         </div>
         <div class="card text-bg-success mb-3" style="max-width: 18rem;
-        background-image: url(./poolasset/images/compitition.jpg);
+        background-image: url(https://c1.wallpaperflare.com/preview/856/5/134/the-jump-from-the-start-competition-swim.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -143,7 +214,7 @@
             </p>
             <div class="collapse" id="collapseExample">
               <div class="card card-body" style="color: black; background-color: rgba(0, 255, 255, 0.159);">
-                <a href="https://youtu.be/8c_lt66Yvn4?si=TQ0Khh2FvS8GCN_z" style="color: black; text-decoration: none;">Tutorials For Speed</a>
+                <a href="https://youtu.be/8c_lt66Yvn4?si=TQ0Khh2FvS8GCN_z" >Tutorials For Speed</a>
               </div>
             </div>
           </div>
@@ -152,68 +223,71 @@
 
       <!-- end of cards -->
 
-      <!-- sign-up -->
-      <div
-        class="row align-items-center g-lg-5 py-5"
-        style="filter: opacity(75%)"
-        id="signup-form"
-      >
-        <div class="col-lg-7 text-center text-lg-start">
-          <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3"></h1>
-          <p class="col-lg-10 fs-1" style="color: red;">Register here for Pro Batch here  &#8827;</p>
+    
+        
+    </div>
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img class="mb-2" src="./poolasset/images/swim-logo.jpg" alt="" width="24" height="19">
+          <small class="d-block mb-3 text-body-secondary">© 2017–2024</small>
         </div>
-        <div class="col-md-10 mx-auto col-lg-5">
-          <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-            <div class="form-floating mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="floatingInput"
-                placeholder="Full Name"
-              />
-              <label for="floatingInput">Full Name</label>
-            </div>
-            <div class="form-floating mb-3">
-              <input
-                type="number"
-                class="form-control"
-                id="floatingInput"
-                placeholder="Pool-Id"
-              />
-              <label for="floatingInput">Pool-Id</label>
-            </div>
-            <div class="form-floating mb-3">
-              <input
-                type="password"
-                class="form-control"
-                id="floatingPassword"
-                placeholder="Password"
-              />
-              <label for="floatingPassword">Password</label>
-            </div>
-            <div class="checkbox mb-3">
-              <label>
-                <input type="checkbox" value="remember-me" /> Remember me
-              </label>
-            </div>
-            <button class="w-100 btn btn-lg btn-primary"  onclick="successPage()">
-              Sign up
-            </button>
-            <p id="display" style="color: black;"></p>
-            <hr class="my-4" />
-            <small class="text-body-secondary"
-              >By clicking Sign up, you agree to the terms of use.</small
-            >
-          </form>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <!-- <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+          </ul> -->
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <!-- <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+          </ul> -->
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <!-- <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+          </ul> -->
         </div>
       </div>
-    </div>
+    </footer>
   </body>
   <script>
-     function successPage(){
+     function proPayment(){
       alert("Payment Successful");
-      document.getElementById("display").innerHTML = "'CONGRATULATIONS!'"  +" You are Now Successfully Registered for Freestyle Swimming";
+      document.getElementById("display-pro").innerHTML = "'CONGRATULATIONS!' You are Now Successfully Registered for Freestyle Swimming";
       
     } 
+     // Get the button:
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+     mybutton.style.display = "block";
+   } else {
+     mybutton.style.display = "none";
+   }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+   document.body.scrollTop = 0; // For Safari
+   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
   </script>
 </html>

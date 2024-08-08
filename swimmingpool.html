@@ -32,7 +32,7 @@
      
 
       h3 {
-        color: rgba(255, 0, 144, 0.58);
+        color: rgb(0, 0, 0);
       }
       h3:hover {
         color: rgb(229, 255, 0);
@@ -197,6 +197,13 @@
           justify-content: space-around;
           gap: 5vw;
         }
+        .card-link{
+          text-decoration: none;
+        }
+        .card-link:hover{
+         
+          text-decoration: underline solid white;
+        }
       @media (min-width: 1200px) {
         .title-a {
           display: flex;
@@ -220,6 +227,13 @@
         }
       }
       @media (min-width: 768px) and (max-width: 991px) {
+        
+        .big-box{
+          padding: 50px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
         .title-a {
           display: flex;
           flex-direction: column;
@@ -228,6 +242,12 @@
         .img-slider{
           height: 60vh;
         }
+        .footer-cards{
+          display: flex;
+          flex-direction: row;
+          width: 80vw;
+        }
+        
       }
 
       @media (min-width: 576px) and (max-width: 767px) {
@@ -245,9 +265,25 @@
         .img-slider{
           height: 50vh;
         }
+        .footer-cards{
+          display: flex;
+          flex-direction: row;
+          width: 100vw;
+        }
+        
       }
 
       @media (max-width: 575px) {
+        body{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+         
+        }
+        .big-box{
+          margin-left: 5vw;
+        }
         .title-a {
           display: flex;
           flex-direction: column;
@@ -266,6 +302,11 @@
         .img-slider{
           height: 40vh;
         }
+        .footer-cards{
+          display: flex;
+          flex-direction: column;
+          width: 100vw;
+        }
       }
     </style>
   </head>
@@ -274,7 +315,7 @@
   <button  onclick="topFunction()" id="myBtn" class="btn btn-secondary button-top">
      Top
   </button>
-    <div class="container-fluid">
+    <div class="container-fluid big-box">
       <div class="row">
         <!-- header -->
         <div
@@ -955,8 +996,8 @@
           </li>
         </ul>
 
-        <div class="row address-cards ">
-         <div class="col-12 footer-cards">
+        <div class="row address-cards">
+         <div class="col-12 col-lg-12 col-md-12 col-sm-1 footer-cards">
           <div class="card" style="width: 18rem">
             <div class="card-body">
               <h5 class="card-title">Contact Us</h5>
@@ -964,11 +1005,11 @@
                 
               </h6><br>
               <p class="card-text txt-card" >
-               <a href="tel:+919876543210" > +919876543210</a> <br>
+               <a href="tel:+919876543210" class="card-link" > +919876543210</a> <br>
                 09:00 to 15:00
               </p>
               <p class="card-text txt-card">
-               <a href="tel:+919988776655"> +919988776655</a> <br>
+               <a href="tel:+919988776655" class="card-link"> +919988776655</a> <br>
                 15:00 to 21:00
               </p>
               
@@ -979,8 +1020,8 @@
               <h5 class="card-title"> Mail</h5>
               
              
-              <a href="#" class="card-link" onclick="mailOne()">abc@example.com</a> <br>
-              <a href="#" class="card-link" onclick="mailTwo()">xyz@sample.com</a>
+              <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="card-link" onclick="mailOne()">abc@example.com</a> <br>
+              <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="card-link" onclick="mailTwo()">xyz@sample.com</a>
             </div>
           </div>
           <div class="card" style="width: 18rem">
